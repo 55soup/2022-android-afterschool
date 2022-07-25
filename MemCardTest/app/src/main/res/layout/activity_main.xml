@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메뉴의 주문 개수를 넣어 주세요."
+        android:textSize="20dp"
+        android:layout_margin="10dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAFFE0"
+        android:layout_margin="10dp"
+        >
+        <TableRow>
+            <TextView android:text="피자(25000원)"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="0"  />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="스파게티(15000원)"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="0"  />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="샐러드(10000원)"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="0"  />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:text="멤버쉬 카드 있음(20% 할인)"
+                android:layout_marginLeft="20dp"  />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="금액 계산하기"
+                android:gravity="center"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="초기화 하기"
+                android:gravity="center"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </TableRow>
+        <TableRow>
+             <TextView
+                 android:text="주문개수 : 0"
+                 android:layout_marginLeft="20dp"
+                 android:textSize="20dp"
+                 />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="주문금액 : 0"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
